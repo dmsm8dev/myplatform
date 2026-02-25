@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dmsm8dev/myplatform/static/css/main.f855e6bc.css",
+    "main.js": "/dmsm8dev/myplatform/static/js/main.dce93555.js",
+    "index.html": "/dmsm8dev/myplatform/index.html",
+    "main.f855e6bc.css.map": "/dmsm8dev/myplatform/static/css/main.f855e6bc.css.map",
+    "main.dce93555.js.map": "/dmsm8dev/myplatform/static/js/main.dce93555.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.dce93555.js"
+  ]
+}
