@@ -1,0 +1,46 @@
+.mainWrapper {
+  display: flex;
+  justify-content: center; // центрируем основной контент
+}
+
+/* ЛЕВЫЙ БАННЕР */
+.firstBanner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 15%;
+  height: 100vh;
+  overflow: hidden;
+
+  .videoWrapper,
+  iframe {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+/* ПРАВЫЙ БАННЕР */
+.secondBanner {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 15%;
+  height: 100vh;
+  overflow: hidden;
+
+  .videoWrapper,
+  iframe {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+/* ЦЕНТРАЛЬНЫЙ КОНТЕНТ */
+.container {
+  padding-top: 100px;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 15%;
+  background: -webkit-linear-gradient(90deg, #1c212e,#2b3a74,#1c212e);/* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(90deg, #1c212e,#2b3a74,#1c212e);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

@@ -1,0 +1,16 @@
+.authLayout {
+  background-color: gray;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .authWrapper {
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    border-radius: 2px;
+
+  }
+}

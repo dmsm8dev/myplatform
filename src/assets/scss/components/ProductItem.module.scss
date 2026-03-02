@@ -1,0 +1,95 @@
+@import '../variables.scss';
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+
+  .watchYet {
+    position: absolute;
+    bottom: 10%;
+    left: 15px;
+    padding: 5px 10px;
+    background-color: $color-light-blue;
+    color: $color-white;
+    border-radius: 5px;
+  }
+
+  .imgBlock {
+    width: 100%;
+  }
+
+
+  .headTextBlock {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+
+    .productTitle {
+      flex: 1;
+      min-width: 0;
+      word-break: break-word;
+      color: $color-white;
+      font-size: 16px;
+    }
+
+    .info {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .rating {
+
+    }
+  }
+
+  .textDesc {
+    color: $color-white;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+
+
+
+}
+
+//.mainWrapper {
+//  display: grid;
+//  grid-template-columns: 1fr; // мобилка — 1 колонка
+//  gap: 20px;
+//
+//  // планшет и выше
+//  @media (min-width: 768px) {
+//    grid-template-columns: repeat(2, 1fr);
+//  }
+//}
+//
+//.wrapper {
+//  display: grid;
+//  grid-template-columns: 170px 1fr; // фото слева, текст справа
+//  gap: 15px;
+//  align-items: center;
+//
+//  padding: 15px;
+//  border: 1px solid #eee;
+//  border-radius: 8px;
+//}
+//
+//.textBlock {
+//  display: flex;
+//  flex-direction: column;
+//  gap: 6px;
+//}
+//
+//.wrapper img {
+//  width: 170px;
+//  height: auto;
+//  object-fit: cover;
+//}

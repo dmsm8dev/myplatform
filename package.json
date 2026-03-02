@@ -2,7 +2,7 @@
   "name": "myplatform",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dmsm8dev.github.io/myplatform",
+  "homepage": "https://dmsm8dev.github.io/myplatform/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -13,8 +13,12 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "react": "^19.2.4",
+    "react-content-loader": "^7.1.2",
     "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1",
     "react-scripts": "5.0.1",
+    "sass": "^1.97.3",
+    "swiper": "^12.1.2",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },

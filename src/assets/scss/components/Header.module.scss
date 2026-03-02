@@ -1,0 +1,61 @@
+@import '../variables.scss';
+.mainWrapper{
+  .navMenu {
+    position: fixed;
+    top: 0;
+
+    width: 70%;        // такая же ширина как container
+    left: 50%;         // центрируем
+    transform: translateX(-50%);
+
+    height: 100px;
+    z-index: 1000;
+    background-color: #1c212e;
+    .navList {
+
+      margin: 10px 2%;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      .navItem {
+
+        &:nth-child(2) {
+          margin-left: 15%;
+        }
+        .navLink {
+          display: block;
+          text-decoration: none;
+          color: $color-white;
+          border: 2px dashed transparent;
+          padding: 5px 25px;
+          border-radius: 10px;
+          cursor: pointer;
+          &:hover {
+            color: $color-darkened;
+            border: 2px dashed $color-light-blue;
+          }
+          &.currentLink {
+            color: $color-light-darkened;
+          }
+        }
+
+        &:last-child {
+          margin-left: auto;
+          .navLink {
+            background-color: $color-light-blue;
+            color: $color-white!important;
+            padding: 5px 25px;
+            &:hover {
+              color: $color-darkened!important;
+              border: 2px dashed $color-light-blue;
+            }
+            &.currentLink {
+              color: $color-light-darkened;
+            }
+          }
+        }
+      }
+    }
+  }
+}

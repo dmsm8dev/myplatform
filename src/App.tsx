@@ -1,23 +1,13 @@
 import React from 'react';
 import './App.css';
+import {BrowserRouter} from "react-router-dom";
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          hello world1111111
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename="/myplatform">
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 
