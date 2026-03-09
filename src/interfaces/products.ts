@@ -8,4 +8,7 @@ export interface IProduct {
   online: boolean;
   watch: number;
   rating: number;
+  year: number;
+  country: number;
+  genre: number[];
 }

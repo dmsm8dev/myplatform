@@ -28,18 +28,19 @@ const Index = () => {
   console.log(products)
   return (
     <HomeLayout>
-      <MainSlider />
-      <Categories activeIndex={activeCategoryIndex} setActiveIndex={(id)=>setActiveCategoryIndex(id)}/>
-      <div className={st.mainWrapper}>
+      {/*<MainSlider />*/}
+      Index page
+      {/*<Categories activeIndex={activeCategoryIndex} setActiveIndex={(id)=>setActiveCategoryIndex(id)}/>*/}
+      {/*<div className={st.mainWrapper}>*/}
 
-        {
-          isLoading ? [...new Array(8)].map((v, i)=> <ProductLoader key={i}/>):
-            products.map((item)=>(
-              <ProductItem key={item.id}  {...item} />
-            ))
-        }
+      {/*  {*/}
+      {/*    isLoading ? [...new Array(8)].map((v, i)=> <ProductLoader key={i}/>):*/}
+      {/*      products.map((item)=>(*/}
+      {/*        <ProductItem key={item.id}  {...item} />*/}
+      {/*      ))*/}
+      {/*  }*/}
 
-      </div>
+      {/*</div>*/}
 
 
     </HomeLayout>

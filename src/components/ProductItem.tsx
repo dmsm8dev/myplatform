@@ -20,7 +20,6 @@ const ProductItem:React.FC<IProduct> = (props) => {
       </div>
       <div className={st.textBlock}>
         <div className={st.headTextBlock}>
-          <h4 className={st.productTitle} >{optimizeText(props.title, 6)}</h4>
           <div className={st.info}>
             <div className={st.emoji}>
               {props.online ?
@@ -31,10 +30,14 @@ const ProductItem:React.FC<IProduct> = (props) => {
             <div className={st.rating}>
               <RatingStar value={props.rating}/>
             </div>
+
+
           </div>
+
         </div>
+        <h4 className={st.productTitle} >{optimizeText(props.title, 6)}</h4>
         <div className={st.textDesc}>
-          {optimizeText(props.description, 10)}
+          {optimizeText(props.description, 40)}
         </div>
 
       </div>

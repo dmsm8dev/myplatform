@@ -1,27 +1,17 @@
 @import '../variables.scss';
 .wrapper {
-  display: grid;
-  grid-template-columns: 50% 1fr;
-  gap: 15px;
-  align-items: center;
+  display: flex;
   position: relative;
 
   padding: 15px;
   border: 1px solid #eee;
   border-radius: 8px;
 
-  .watchYet {
-    position: absolute;
-    bottom: 10%;
-    left: 15px;
-    padding: 5px 10px;
-    background-color: $color-light-blue;
-    color: $color-white;
-    border-radius: 5px;
-  }
 
   .imgBlock {
     width: 100%;
+    min-height: 260px;
+    outline: 2px solid blue;
   }
 
 
@@ -29,6 +19,16 @@
     display: flex;
     width: 100%;
     gap: 10px;
+    outline: 2px solid red;
+
+    .info {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .rating {}
+    }
 
     .productTitle {
       flex: 1;
@@ -38,21 +38,25 @@
       font-size: 16px;
     }
 
-    .info {
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-    .rating {
 
-    }
   }
 
   .textDesc {
     color: $color-white;
     font-size: 14px;
     line-height: 1;
+  }
+
+
+
+  .watchYet {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    padding: 5px 10px;
+    background-color: $color-light-blue;
+    color: $color-white;
+    border-radius: 5px;
   }
 
 

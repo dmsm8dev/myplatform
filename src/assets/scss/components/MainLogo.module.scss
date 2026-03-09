@@ -1,9 +1,25 @@
 @import '../variables.scss';
+@import '../_mixins.scss';
 .mainLogo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
+  width: 120px;
+  outline: 2px solid yellow;
+
+  img {
+    width: 70px;
+    height: 35px;
+  }
+
+  @include onTablet {
+    width: 150px;
+
+    img {
+      width: 90px;
+      height: 45px;
+    }
+  }
 
   .logoTitle {
     text-transform: uppercase;
